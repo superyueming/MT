@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>MT</Name>
+    <ProjectGuid>{d00c1fb4-af34-407c-ab39-d297130b9997}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MT</RootNamespace>
+    <!-- important to be opened by PHP Tools, when also Phalanger Tools are installed -->
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>MT</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="activityAdd.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="activityEdit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="activityInfo.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="activityList.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="base\debug.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="base\Guid.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="locationAdd.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="locationEdit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="locationInfo.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="locationList.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logic\activityAdd.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logic\activityEdit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logic\connect.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logic\activityFollow.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logic\locationEdit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logic\locationAdd.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logic\editUser.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logic\locationFollow.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logic\login.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logic\register.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="register.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="userEdit.php">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="base\" />
+    <Folder Include="logic" />
+    <Folder Include="logic\output\" />
+    <Folder Include="script\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logic\output\trace.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="script\jquery-1.9.1.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="script\r.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="script\test.js">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

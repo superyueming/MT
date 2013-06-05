@@ -1,0 +1,16 @@
+顶端链接
+
+PositionList.php
+ActivityList.php
+
+地点推荐(暂无)
+活动推荐(暂无)
+
+登录框
+
+user表进行查询验证
+
+链接register.php
+
+
+登陆后链接user.php

@@ -1,0 +1,5 @@
+LogList.php
+PhotoList.php
+Activity.php
+
+需要连接user表
